@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isPrime(number) {
+        // let arr = [];
+        let count = 0;
+        let result;
+        if (number == 0 || number == 1) {
+          result = number + " không là số nguyên tố";
+        } else {
+          for (let i = 2; i < number && i < 10000; i++) {
+            if (number % i == 0) {
+              count++;
+              result = number + " không là số nguyên tố";
+              return result;
+            }
+          }
+
+          if (count == 0) {
+            result = number + " là số nguyên tố";
+          }
+        }
+        return result;
+      }
+
+      let inputNum = +prompt("Nhập 1 số nguyên ");
+      alert(isPrime(inputNum));
+      // const start = performance.now();
+      // isPrime(inputNum);
+      // const end = performance.now();
+      // console.log(`Execution time: ${end - start} ms`);
+    </script>
+  </body>
+</html>
