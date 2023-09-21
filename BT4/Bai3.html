@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function giaiThua(x) {
+        if (x == 2) { //Điều kiện để ngừng vòng lặp
+          return 2;
+        } else {
+          let result= x * giaiThua(x - 1);//Vòng lặp
+          return result;
+        }
+      }
+      //giaThua(): Chạy vòng lặp đến x = 2 thì ngừng
+
+      alert(giaiThua(5));
+    </script>
+  </body>
+</html>

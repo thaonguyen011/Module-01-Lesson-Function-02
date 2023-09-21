@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function check(num) {
+        if (Number.isInteger(num)) {
+          if (num > 0) {
+            alert(num + " là số nguyên dương");
+          } else {
+            alert(num + " không là số nguyên dương");
+          }
+        } else {
+          alert("Không phải số nguyên");
+        }
+      }
+      let x;
+      check(2);
+      check(-2);
+      check(2.1);
+      check('');
+      check('a');
+      check(x);
+    </script>
+  </body>
+</html>
