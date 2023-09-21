@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function footToMeter(foot) {
+            let meter = (foot * 0.305).toPrecision(3);
+            return meter;
+        }
+
+        function meterToFoot(meter) {
+            let foot = parseInt(meter * 3.279);
+            return foot;
+        }
+
+        alert(footToMeter(1));
+        alert(footToMeter(2));
+        alert(meterToFoot(2.745));
+        alert(meterToFoot(3.050));
+    </script>
+</body>
+</html>
