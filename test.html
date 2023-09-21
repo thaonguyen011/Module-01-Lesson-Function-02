@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,34 +20,6 @@
 
     </script>
 </body>
-</html> -->
+</html> 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <span>Nhập từ: </span>
-    <input type="text" id="word" />
-    <input type="button" value="dịch" onclick="dich();" />
-    <br />
-    <p id="result"></p>
-    <script>
-      function dich() {
-        let tienganh = ["liam", "avocado", "pineapple", "pear"];
-        let tiengviet = ["chanh", "bơ", "dứa", "lê"];
-        let nhap = document.getElementById("word").value;
-        let index = tienganh.indexOf(nhap);
-        if (index == -1) {
-          alert("Không có từ này");
-        } else {
-          document.getElementById("result").innerHTML =
-            "Nghĩa của từ " + nhap + " là " + tiengviet[index];
-        }
-      }
-    </script>
-  </body>
-</html>
+
