@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr id="hang">
+        <td id="cot">1</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <input type="button" onclick="del()" value="del" />
+
+    <script>
+      function del() {
+        document.querySelector("#cot").remove(2);
+      }
+      let x = 1;
+      document.write('<input type="text"  id=" ' + "afteredit" + x + '"/>');
+    </script>
+  </body>
+</html>
